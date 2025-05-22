@@ -1,0 +1,320 @@
+.error {
+    color: red;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+
+.recipe-header {
+    background-color: #fff8f0;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f1e2d3;
+    transition: all 0.3s ease-in-out;
+}
+
+.recipe-header:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.recipe-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #c94f4f;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.recipe-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.meta-item i {
+    color: #ff7b54;
+    font-size: 1.1rem;
+}
+
+.recipe-header .lead {
+    font-size: 1.125rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* 
+.recipe-header {
+    background-color: #f8f9fa;
+    padding: 2rem !important;
+    margin-bottom: 2rem !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.recipe-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.recipe-image {
+    width : 100%;
+    height : 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+} */
+
+
+
+.recipe-stats {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.ingredients-section {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #dc3545;
+}
+.section-title ul li{
+    font-size: large;
+}
+
+.ingredient-list{
+    font-weight : bold;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.ingredient-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.steps-section {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.step-item {
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    position: relative;
+}
+.steps-instruction {
+    font-size: large;
+} 
+
+.step-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.tips-section {
+    background-color: #fff9db;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.recipe-actions {
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+}
+
+.action-button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
+
+.nutrition-info div {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+@media (max-width: 768px) {
+    .recipe-meta {
+        gap: 1rem;
+    }
+    
+    .recipe-actions {
+        position: static;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Comments and Ratings Styles */
+.rating-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating-input input {
+    display: none;
+}
+
+.rating-input label {
+    color: #ddd;
+    font-size: 24px;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+.rating-input input:checked ~ label,
+.rating-input label:hover,
+.rating-input label:hover ~ label {
+    color: #ffc107;
+}
+
+.stars {
+    font-size: 20px;
+}
+
+.comment {
+    border-left: 4px solid #007bff;
+}
+
+.comment .stars {
+    font-size: 16px;
+}
+
+.rating-summary h3 {
+    font-size: 48px;
+    color: #28a745;
+}
+
+.rating-summary .stars {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.progress {
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+/* Add these styles to your recipe_card.css file */
+
+.author-section {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.author-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.author-title {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.author-bio {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.author-social a {
+    color: #666;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.author-social a:hover {
+    color: #dc3545;
+}
+
+.card-footer {
+    font-size: 0.85rem;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 9999;
+    min-width: 250px;
+}
